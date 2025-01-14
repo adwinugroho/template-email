@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Order Confirmation</title>
+        <style>
+            body {
+                font-family: "Nunito Sans", sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #ffffff;
+                color: #45464e;
+            }
+            .header {
+                text-align: center;
+                margin: 20px;
+            }
+            .header img {
+                width: 150px;
+                height: auto;
+            }
+            .header h1 {
+                font-size: 20px;
+                font-weight: 800;
+                margin-top: 10px;
+            }
+            .order-info {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: 10px 20px;
+            }
+            .order-number {
+                font-size: 14px;
+                font-weight: 400;
+            }
+            .pay-button {
+                background: #4dace0;
+                color: #ffffff;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 8px;
+                font-size: 16px;
+                font-weight: 400;
+                text-align: center;
+            }
+            .billing-address,
+            .order-summary {
+                margin: 10px 20px;
+                padding: 15px;
+                background: #fff;
+                box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+            }
+            .billing-address h2,
+            .order-summary h2 {
+                font-size: 16px;
+                font-weight: 700;
+                margin-bottom: 10px;
+            }
+            .address-details,
+            .summary-item {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 10px;
+            }
+            .address-details div {
+                font-weight: 600;
+                font-size: 14px;
+            }
+            .summary-item {
+                font-weight: 600;
+                font-size: 14px;
+            }
+            .summary-item.total {
+                font-weight: 700;
+                font-size: 16px;
+            }
+            .separator {
+                border: 1px solid #f1eded;
+                margin: 10px 0;
+            }
+            @media (max-width: 768px) {
+                .header img {
+                    width: 120px;
+                }
+                .header h1 {
+                    font-size: 18px;
+                }
+                .order-info {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                .pay-button {
+                    font-size: 14px;
+                    padding: 8px 16px;
+                }
+                .billing-address,
+                .order-summary {
+                    margin: 5px;
+                    padding: 10px;
+                }
+                .billing-address h2,
+                .order-summary h2 {
+                    font-size: 14px;
+                }
+                .address-details div,
+                .summary-item {
+                    font-size: 12px;
+                }
+                .summary-item.total {
+                    font-size: 14px;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <img src="image.png" alt="Jubelio Store Logo" />
+            <h1>Your Order Has Been Created!</h1>
+        </div>
+        <div class="order-info">
+            <div class="order-number">
+                Order Number: <strong>628346286997199</strong>
+            </div>
+            <a href="#" class="pay-button" style="margin-left: auto">Pay</a>
+        </div>
+        <div class="billing-address">
+            <h2>Billing Address</h2>
+            <div class="address-details">
+                <div>Name</div>
+                <div>Mutia Adelina</div>
+            </div>
+            <div class="address-details">
+                <div>Address</div>
+                <div>Jl. Sunter Hijau Raya II</div>
+            </div>
+            <div class="address-details">
+                <div>Phone</div>
+                <div>(+62) 8181890027</div>
+            </div>
+        </div>
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <div class="summary-item">
+                <div>Sendal Rumah Polos - Biru</div>
+                <div>Rp150.000</div>
+            </div>
+            <div class="summary-item">
+                <div>Russ Sweater Crewneck Primary Lilac</div>
+                <div>Rp150.000</div>
+            </div>
+            <div class="separator"></div>
+            <div class="summary-item">
+                <div>Sub Total</div>
+                <div>Rp300.000</div>
+            </div>
+            <div class="summary-item">
+                <div>Shipping</div>
+                <div>Rp10.000</div>
+            </div>
+            <div class="summary-item">
+                <div>Tax</div>
+                <div>Rp7.000</div>
+            </div>
+            <div class="separator"></div>
+            <div class="summary-item total">
+                <div>Order Total</div>
+                <div>Rp317.000</div>
+            </div>
+        </div>
+    </body>
+</html>
